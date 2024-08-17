@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Projects Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .bio-section, .projects-section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Bio Section */
+        .bio-container {
+            display: flex;
+            align-items: center;
+        }
+        .bio-container img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+        .bio-container p {
+            font-size: 16px;
+        }
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .project-image-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .project-image-container img {
+            width: 100%;
+            height: auto;
+            transition: filter 0.3s ease;
+        }
+        .project-image-container:hover img {
+            filter: blur(5px);
+        }
+        .project-description {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            /* color: #000000; */
+            font-size: 16px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .project-image-container:hover .project-description {
+            opacity: 1;
+        }
+        .project-title {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+        }
+        .project-tags {
+            padding: 10px;
+            text-align: center;
+        }
+        .project-tags span {
+            display: inline-block;
+            /* background-color: #007bff; */
+            color: #ffffff;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin: 5px;
+            font-size: 14px;
+        }
+        .project-button {
+            display: block;
+            background-color: #28a745;
+            width: 80px;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px 20px 20px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .project-button:hover {
+            background-color: #218838;
+        }
+
+        .paper-info{
+          background-color: #007bff;
+        }
+
+        .project-architecture{
+          background-color: #005c5483;
+        }
+
+        .project-task{
+          background-color: #575555;
+        }
+
+        .paper-buttons{
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .project-button.left{
+          margin-left: 5%
+        }
+
+        .project-button.right{
+          margin-right: 5%
+        }
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Section 1: Bio -->
+        <div class="bio-section">
+            <div class="bio-container">
+                <img src="images/profile.jpg" alt="Your Photo">
+                <p>
+                    Hi, I'm Karolos Nikitaras, an AI enthusiast with a passion for developing intelligent systems that solve real-world problems. I have 4 years of experience in the audio domain, where I've worked on multiple text-to-speech and speech-to-speech tasks, and 1 year of experience in the music domain. Check out some of my speech generation projects below!
+                </p>
+            </div>
+        </div>
+
+        <!-- Section 2: Projects -->
+        <div class="projects-section">
+            <h2 class="section-title">My Speech Generation AI Projects</h2>
+
+            <div class="projects-grid">
+            
+              <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img class="project-image" src="images/accent_conversion5.jpg" style="width:100%; min-width: 265px; height:100%; min-height: 265px;" alt="Project 1 Image">
+                        <div class="project-description">
+                            This model is trained on american and indian english speech corpora, perfoming modeling and control over accent in the generated speech.
+                        </div>
+                    </div>
+                    <div class="project-title">Accent Conversion</div>
+                    <div class="project-tags">
+                        <span class="project-task">supervised, token-level prosody modeling</span>
+                        <span class="project-task">noise-robust speaker/content modeling</span>
+                        <br>
+                        <span class="project-architecture">SSL/ASR features</span>
+                        <span class="project-architecture">VQVAE</span>
+                        <br>
+                        <span class="paper-info">2024</span>
+                    </div>
+                    <div class="paper-buttons">
+                      <a href="project1-link.html" class="project-button" style="width: 100%;">samples</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img class="project-image" src="images/style_transfer3.jpg" alt="Project 2 Image">
+                        <div class="project-description">
+                            This work performs both fine-grained and coarse-grained prosody modeling, enabling style transfer.
+                        </div>
+                    </div>
+                    <div class="project-title">Style Transfer</div>
+                    <div class="project-tags">
+                        <span class="project-task">unsupervised, phoneme-level prosody modeling</span>
+                        <span class="project-task">coarse-grained prosody modeling</span>
+                        <br>
+                        <span class="project-architecture">FVAE</span>
+                        <br>
+                        <span class="paper-info">published paper</span>
+                        <span class="paper-info">2022</span>
+                    </div>
+                    <div class="paper-buttons">
+                      <a href="project2-link.html" class="project-button left">samples</a>
+                      <a href="https://arxiv.org/abs/2211.00523" class="project-button right">paper</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img class="project-image" src="images/expressive_speech_synthesis.jpg" alt="Project 3 Image">
+                        <div class="project-description">
+                            This model performs unsupervised and fine-grained prosody modeling and then trains AR and Flow networks for predicting those prososdy latents through text, while comparing them in terms of expressiveness and naturalness.
+                        </div>
+                    </div>
+                    <div class="project-title">Expressive Speech Synthesis</div>
+                    <div class="project-tags">
+                        <span class="project-task">unsupervised, phoneme-level prosody modeling</span>
+                        <span class="project-task">Prosody Prediction | Prior Sampling</span>
+                        <br>
+                        <span class="project-architecture">N-Flows</span>
+                        <span class="project-architecture">DVAE</span>
+                        <span class="project-architecture">FVAE</span>
+                        <span class="project-architecture">Non-Attentive</span>
+                        <span class="project-architecture">Vits</span>
+                        <br>
+                        <span class="paper-info">published paper</span>
+                        <span class="paper-info">2022</span>
+                    </div>
+                    <div class="paper-buttons">
+                      <a href="project3-link.html" class="project-button left">samples</a>
+                      <a href="https://arxiv.org/abs/2211.01327" class="project-button right">paper</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img class="project-image" src="images/prosody_control.jpg" alt="Project 4 Image">
+                        <div class="project-description">
+                            This is the reproduction of a paper that models and controls prosody in an unsupervised, fine-grained and hierarchical way. It learns 3 phoneme-level dimensions that turn out to be energy, F0 and duration.
+                        </div>
+                    </div>
+                    <div class="project-title">Prosody Control</div>
+                    <div class="project-tags">
+                      <span class="project-task">unsupervised, phoneme-level prosody modeling</span>
+                      <span class="project-task">Prosody Extracion/Editting | Posterior Sampling</span>
+                      <br>
+                      <span class="project-architecture">FVAE</span>
+                      <span class="project-architecture">Tacotron 2</span>
+                      <span class="project-architecture">Non-Attentive</span>
+                      <br>
+                      <span class="paper-info">paper reproduction</span>
+                      <span class="paper-info">2022</span>                      
+                    </div>
+                    <div class="paper-buttons">
+                      <a href="project4-link.html" class="project-button" style="width: 100%;">samples</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img class="project-image" src="images/noise_control.jpg" alt="Project 5 Image">
+                        <div class="project-description">
+                            This work factorizes speech into linguistic content, prosody, speaker voice and noise.
+                        </div>
+                    </div>
+                    <div class="project-title">Noise Control</div>
+                    <div class="project-tags">
+                        <span class="project-task">Prosody Modeling</span>
+                        <span class="project-task">Noise Modeling</span>
+                        <br>
+                        <span class="project-architecture">VAE</span>
+                        <span class="project-architecture">Tacontron 2</span>
+                        <br>
+                        <span class="paper-info">published paper</span>
+                        <span class="paper-info">2022</span>             
+                    </div>
+                    <div class="paper-buttons">
+                      <a href="project5-link.html" class="project-button left">samples</a>
+                      <a href="https://arxiv.org/abs/2204.05070" class="project-button right">paper</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
