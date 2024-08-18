@@ -269,6 +269,12 @@
       };
   </script>
 
+<div class="head-container">
+  <h1 style="text-align: center;">Learning utterance-level representations through token-level acoustic latents prediction for Expressive Speech Synthesis</h1>
+  <p style="text-align: center;font-size: 20px;">
+        Karolos Nikitaras, Konstantinos Klapsas, Nikolaos Ellinas, Georgia Maniati, June Sig Sung, Inchul Hwang, Aimilios Chalamandaris, Pirros Tsiakoulis and Spyros Raptis</p>
+  <p style="text-align: left;font-size: 18px;"><strong>Abstract:</strong> This paper proposes a multi-scale latent variable, text-to-speech (TTS) model for Expressive Speech Synthesis.Our goal is to capture and control utterance-level attributes within a system that performs token-level prosody modeling. Current works aim to factorize different resolution speech attributes into representations extracted by modules that operate in the corresponding scale. We show that fine-grained latent space itself is able to capture coarse-grained information, such as character acting voice and style. Therefore, it arises a trade-off between the diversity of the different resolution representations and their disentanglement We alleviate such issue by first capturing multi-resolution speech attributes into a token-level latent space and then, separately train a prior network that, given a text, learns utterance-level representations in order to predict the phoneme-level, posterior latents extracted during the previous step. Both qualitative and quantitative evaluations are used to demonstrate the effectiveness of the proposed approach.</p>
+</div>
 
 <div>
   <a href="#title1" class="custom-a-href">
@@ -280,15 +286,15 @@
   <div class="sample-container" style="display: block;">
     
   <div class="sample">
-      <div class="sample-title">
-      <span class="quotation">“</span>
-      <div class="transcript">By thy very carelessness they know that thou art a man.
-      </div>
-      </div>
-      <br>
-      <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_312-JBK'))">target<audio id="prior_312-JBK" controls="" preload="none">
+      <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_312-JBK'))">target style<audio id="prior_312-JBK" controls="" preload="none">
       <source src="wavs/prior_312-JBK.wav" type="audio/wav">Your browser does not support the audio tag.
       </audio>
+      </div>
+      <!-- <br> -->
+      <div class="sample-title">
+        <span class="quotation">“</span>
+        <div class="transcript">By thy very carelessness they know that thou art a man.
+        </div>
       </div>
       <br>
       <div class="r-number" style="width: 100px; display: inline-block" onclick="togglePlay(document.getElementById('prior_target312-JBK_text294-JBK_prop_u16_f16'))">prop_u16_f16<audio id="prior_target312-JBK_text294-JBK_prop_u16_f16" controls="" preload="none">
@@ -320,16 +326,16 @@
       </audio>
       </div>
       </div>
+
       <div class="sample">
-      <div class="sample-title">
-      <span class="quotation">“</span>
-      <div class="transcript">Ive laid by now, and gev up to the young uns.
-      </div>
-      </div>
-      <br>
-      <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_565-SLM'))">target<audio id="prior_565-SLM" controls="" preload="none">
-      <source src="wavs/prior_565-SLM.wav" type="audio/wav">Your browser does not support the audio tag.
-      </audio>
+        <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_565-SLM'))">target style<audio id="prior_565-SLM" controls="" preload="none">
+        <source src="wavs/prior_565-SLM.wav" type="audio/wav">Your browser does not support the audio tag.
+        </audio>
+        </div>  
+        <div class="sample-title">
+        <span class="quotation">“</span>
+        <div class="transcript">Ive laid by now, and gev up to the young uns.
+        </div>
       </div>
       <br>
       <div class="r-number" style="width: 100px; display: inline-block" onclick="togglePlay(document.getElementById('prior_target565-SLM_text566-SLM_prop_u16_f16'))">prop_u16_f16<audio id="prior_target565-SLM_text566-SLM_prop_u16_f16" controls="" preload="none">
@@ -361,17 +367,18 @@
       </audio>
       </div>
       </div>
+
       <div class="sample">
-      <div class="sample-title">
-      <span class="quotation">“</span>
-      <div class="transcript">He was apparently equally unconscious of anything extraordinary in the situation.
+        <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_1022-BB'))">target style<audio id="prior_1022-BB" controls="" preload="none">
+          <source src="wavs/prior_1022-BB.wav" type="audio/wav">Your browser does not support the audio tag.
+          </audio>
+          </div>
+        <div class="sample-title">
+        <span class="quotation">“</span>
+        <div class="transcript">He was apparently equally unconscious of anything extraordinary in the situation.
+        </div>
       </div>
-      </div>
-      <br>
-      <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_1022-BB'))">target<audio id="prior_1022-BB" controls="" preload="none">
-      <source src="wavs/prior_1022-BB.wav" type="audio/wav">Your browser does not support the audio tag.
-      </audio>
-      </div>
+      <br>    
       <br>
       <div class="r-number" style="width: 100px; display: inline-block" onclick="togglePlay(document.getElementById('prior_target1022-BB_text887-AWK_prop_u16_f16'))">prop_u16_f16<audio id="prior_target1022-BB_text887-AWK_prop_u16_f16" controls="" preload="none">
       <source src="wavs/prior_target1022-BB_text887-AWK_prop_u16_f16.wav" type="audio/wav">Your browser does not support the audio tag.
@@ -403,15 +410,14 @@
       </div>
       </div>
       <div class="sample">
+        <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_1022-SNS'))">target style<audio id="prior_1022-SNS" controls="" preload="none">
+          <source src="wavs/prior_1022-SNS.wav" type="audio/wav">Your browser does not support the audio tag.
+          </audio>
+        </div>
       <div class="sample-title">
       <span class="quotation">“</span>
       <div class="transcript">That his understanding has no brilliancy, his feelings no ardour, and his voice no expression.
       </div>
-      </div>
-      <br>
-      <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_1022-SNS'))">target<audio id="prior_1022-SNS" controls="" preload="none">
-      <source src="wavs/prior_1022-SNS.wav" type="audio/wav">Your browser does not support the audio tag.
-      </audio>
       </div>
       <br>
       <div class="r-number" style="width: 100px; display: inline-block" onclick="togglePlay(document.getElementById('prior_target1022-SNS_text669-SNS_prop_u16_f16'))">prop_u16_f16<audio id="prior_target1022-SNS_text669-SNS_prop_u16_f16" controls="" preload="none">
@@ -443,17 +449,18 @@
       </audio>
       </div>
       </div>
+
       <div class="sample">
-      <div class="sample-title">
+        <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_1074-UTS'))">target style<audio id="prior_1074-UTS" controls="" preload="none">
+          <source src="wavs/prior_1074-UTS.wav" type="audio/wav">Your browser does not support the audio tag.
+          </audio>
+          </div>
+          <div class="sample-title">
       <span class="quotation">“</span>
       <div class="transcript">Mingled with these were a few scattered pines, some fifty, some nearer seventy, feet high.
       </div>
       </div>
       <br>
-      <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_1074-UTS'))">target<audio id="prior_1074-UTS" controls="" preload="none">
-      <source src="wavs/prior_1074-UTS.wav" type="audio/wav">Your browser does not support the audio tag.
-      </audio>
-      </div>
       <br>
       <div class="r-number" style="width: 100px; display: inline-block" onclick="togglePlay(document.getElementById('prior_target1074-UTS_text1468-TRI_prop_u16_f16'))">prop_u16_f16<audio id="prior_target1074-UTS_text1468-TRI_prop_u16_f16" controls="" preload="none">
       <source src="wavs/prior_target1074-UTS_text1468-TRI_prop_u16_f16.wav" type="audio/wav">Your browser does not support the audio tag.
@@ -484,17 +491,18 @@
       </audio>
       </div>
       </div>
+
       <div class="sample">
-      <div class="sample-title">
+        <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_1078-EFR'))">target style<audio id="prior_1078-EFR" controls="" preload="none">
+          <source src="wavs/prior_1078-EFR.wav" type="audio/wav">Your browser does not support the audio tag.
+          </audio>
+          </div>
+          <div class="sample-title">
       <span class="quotation">“</span>
       <div class="transcript">I had thought I recognised in you one of the chosen.
       </div>
       </div>
       <br>
-      <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_1078-EFR'))">target<audio id="prior_1078-EFR" controls="" preload="none">
-      <source src="wavs/prior_1078-EFR.wav" type="audio/wav">Your browser does not support the audio tag.
-      </audio>
-      </div>
       <br>
       <div class="r-number" style="width: 100px; display: inline-block" onclick="togglePlay(document.getElementById('prior_target1078-EFR_text8638-JNE_prop_u16_f16'))">prop_u16_f16<audio id="prior_target1078-EFR_text8638-JNE_prop_u16_f16" controls="" preload="none">
       <source src="wavs/prior_target1078-EFR_text8638-JNE_prop_u16_f16.wav" type="audio/wav">Your browser does not support the audio tag.
@@ -525,17 +533,18 @@
       </audio>
       </div>
       </div>
+
       <div class="sample">
-      <div class="sample-title">
+        <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_1083-SLM'))">target style<audio id="prior_1083-SLM" controls="" preload="none">
+          <source src="wavs/prior_1083-SLM.wav" type="audio/wav">Your browser does not support the audio tag.
+          </audio>
+          </div>
+          <div class="sample-title">
       <span class="quotation">“</span>
       <div class="transcript">And what I say, Ill stick to, but Ill quarrel wi no man.
       </div>
       </div>
       <br>
-      <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_1083-SLM'))">target<audio id="prior_1083-SLM" controls="" preload="none">
-      <source src="wavs/prior_1083-SLM.wav" type="audio/wav">Your browser does not support the audio tag.
-      </audio>
-      </div>
       <br>
       <div class="r-number" style="width: 100px; display: inline-block" onclick="togglePlay(document.getElementById('prior_target1083-SLM_text556-SLM_prop_u16_f16'))">prop_u16_f16<audio id="prior_target1083-SLM_text556-SLM_prop_u16_f16" controls="" preload="none">
       <source src="wavs/prior_target1083-SLM_text556-SLM_prop_u16_f16.wav" type="audio/wav">Your browser does not support the audio tag.
@@ -566,17 +575,18 @@
       </audio>
       </div>
       </div>
+
       <div class="sample">
-      <div class="sample-title">
+        <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_1123-RWV'))">target style<audio id="prior_1123-RWV" controls="" preload="none">
+          <source src="wavs/prior_1123-RWV.wav" type="audio/wav">Your browser does not support the audio tag.
+          </audio>
+          </div>
+          <div class="sample-title">
       <span class="quotation">“</span>
       <div class="transcript">I cannot deny that I grieved for his grief, whatever that was, and would have given much to assuage it.
       </div>
       </div>
       <br>
-      <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_1123-RWV'))">target<audio id="prior_1123-RWV" controls="" preload="none">
-      <source src="wavs/prior_1123-RWV.wav" type="audio/wav">Your browser does not support the audio tag.
-      </audio>
-      </div>
       <br>
       <div class="r-number" style="width: 100px; display: inline-block" onclick="togglePlay(document.getElementById('prior_target1123-RWV_text2552-JNE_prop_u16_f16'))">prop_u16_f16<audio id="prior_target1123-RWV_text2552-JNE_prop_u16_f16" controls="" preload="none">
       <source src="wavs/prior_target1123-RWV_text2552-JNE_prop_u16_f16.wav" type="audio/wav">Your browser does not support the audio tag.
@@ -607,17 +617,18 @@
       </audio>
       </div>
       </div>
+
       <div class="sample">
-      <div class="sample-title">
+        <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_2178-TES'))">target style<audio id="prior_2178-TES" controls="" preload="none">
+          <source src="wavs/prior_2178-TES.wav" type="audio/wav">Your browser does not support the audio tag.
+          </audio>
+          </div>
+          <div class="sample-title">
       <span class="quotation">“</span>
       <div class="transcript">And forgive us our debts, as we forgive our debtors.
       </div>
       </div>
       <br>
-      <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_2178-TES'))">target<audio id="prior_2178-TES" controls="" preload="none">
-      <source src="wavs/prior_2178-TES.wav" type="audio/wav">Your browser does not support the audio tag.
-      </audio>
-      </div>
       <br>
       <div class="r-number" style="width: 100px; display: inline-block" onclick="togglePlay(document.getElementById('prior_target2178-TES_text118-TES_prop_u16_f16'))">prop_u16_f16<audio id="prior_target2178-TES_text118-TES_prop_u16_f16" controls="" preload="none">
       <source src="wavs/prior_target2178-TES_text118-TES_prop_u16_f16.wav" type="audio/wav">Your browser does not support the audio tag.
@@ -648,17 +659,18 @@
       </audio>
       </div>
       </div>
+
       <div class="sample">
-      <div class="sample-title">
+        <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_5712-JNE'))">target style<audio id="prior_5712-JNE" controls="" preload="none">
+          <source src="wavs/prior_5712-JNE.wav" type="audio/wav">Your browser does not support the audio tag.
+          </audio>
+          </div>
+          <div class="sample-title">
       <span class="quotation">“</span>
       <div class="transcript">It convinced her that accident only could discover to mister Bingley, her sisters being in town.
       </div>
       </div>
       <br>
-      <div class="gt" style="display: inline-block;" onclick="togglePlay(document.getElementById('prior_5712-JNE'))">target<audio id="prior_5712-JNE" controls="" preload="none">
-      <source src="wavs/prior_5712-JNE.wav" type="audio/wav">Your browser does not support the audio tag.
-      </audio>
-      </div>
       <br>
       <div class="r-number" style="width: 100px; display: inline-block" onclick="togglePlay(document.getElementById('prior_target5712-JNE_text2187-PNP_prop_u16_f16'))">prop_u16_f16<audio id="prior_target5712-JNE_text2187-PNP_prop_u16_f16" controls="" preload="none">
       <source src="wavs/prior_target5712-JNE_text2187-PNP_prop_u16_f16.wav" type="audio/wav">Your browser does not support the audio tag.

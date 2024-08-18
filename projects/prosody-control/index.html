@@ -242,10 +242,24 @@
       target.parentElement.nextElementSibling.style.display =  currentDisplayAttrValue == 'none' ? 'block' : 'none';
       };
   </script>
+
+  <div class="head-container">
+    <h1 style="color:darkorange">
+      This is the reproduction of following paper:
+    </h1>
+    <h1 style="text-align: center;">Fully-hierarchical fine-grained prosody modeling for interpretable speech synthesis
+    </h1>
+    <p style="text-align: center;font-size: 20px;">
+      Guangzhi Sun, Yu Zhang, Ron J. Weiss, Yuan Cao, Heiga Zen, Yonghui Wu
+    </p>
+    <p style="text-align: left;font-size: 18px;"><strong>Abstract:</strong> This paper proposes a hierarchical, fine-grained and interpretable latent variable model for prosody based on the Tacotron 2 text-to-speech model. It achieves multi-resolution modeling of prosody by conditioning finer level representations on coarser level ones. Additionally, it imposes hierarchical conditioning across all latent dimensions using a conditional variational auto-encoder (VAE) with an auto-regressive structure. Evaluation of reconstruction performance illustrates that the new structure does not degrade the model while allowing better interpretability. Interpretations of prosody attributes are provided together with the comparison between word-level and phone-level prosody representations. Moreover, both qualitative and quantitative evaluations are used to demonstrate the improvement in the disentanglement of the latent dimensions.
+    </p>
+  </div>
+
   <div>
     <a href="#title2" class="custom-a-href">
         <h2 style="text-align: left;" onclick="showSample(event)" id="title2">
-            2) Phoneme-level Prosody Control
+            Phoneme-level Prosody Control
         </h2>
     </a>
 
